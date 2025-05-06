@@ -6,6 +6,8 @@ on:
     paths-ignore:
     - "docs/**"
     - "README.md"
+    branches-ignore:
+      - "test/**"
   push:
     branches:
       - master
