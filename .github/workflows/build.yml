@@ -152,8 +152,8 @@ jobs:
       - name: Build rustdesk
         run: |
           # Windows: build RustDesk
-          #python3 .\build.py --portable --hwcodec --vram --skip-portable-pack
-          cargo build --features vram,hwcodec --release
+          python3 .\build.py --portable --hwcodec --vram --skip-portable-pack
+          #cargo build --features vram,hwcodec --release
           #mv ./flutter/build/windows/x64/runner/Release ./rustdesk
 
           # # Download usbmmidd_v2.zip and extract it to ./rustdesk
