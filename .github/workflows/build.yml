@@ -154,7 +154,7 @@ jobs:
           # Windows: build RustDesk
           #python3 .\build.py --hwcodec --vram
           cargo build --features vram,hwcodec --release
-          ls -al ./target/release
+          ls ./target/release
           mv ./target/release ./rustdesk
           #mv ./flutter/build/windows/x64/runner/Release ./rustdesk
 
